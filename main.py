@@ -6,7 +6,7 @@ First we set our identification
  Scissors = S = -1
 
 Then we create a dictionary to store this
-and also allow the computer to select random numbers         # For that go to chat GPT and search code for random number selection between 1,0 and -1
+and also allow the computer to select random numbers         # For that code for random number selection between 1,0 and -1
 '''
 import pyttsx3                                          # This import is used to give audio feed back 
 engine = pyttsx3.init()
