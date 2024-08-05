@@ -3,7 +3,7 @@
 First we set our identification
  Rock = R = 1
  Paper = P = 0
- Sissor = S = -1
+ Scissors = S = -1
 
 Then we create a dictionary to store this
 and also allow the computer to select random numbers         # For that go to chat GPT and search code for random number selection between 1,0 and -1
@@ -12,15 +12,15 @@ import pyttsx3                                          # This import is used to
 engine = pyttsx3.init()
 
 
-import random
-comp = random.choice([-1,0,1])
+import random                                         # This import function is used to generate random numbers by the system
+comp = random.choice([-1,0,1])                        # These are the given numbers for choises to be made by the system
 
 gDict = {"r":1, "p":0, "s":-1}
 
 you = input("Choose Your's: ")
 U = gDict[you.lower()]
 
-rDict = {1:"Rock", 0:"Paper", -1:"Siscors"}             # Reverse Dictionary can show us the Word/Key aginst a particular value/number. 
+rDict = {1:"Rock", 0:"Paper", -1:"Scissors"}             # Reverse Dictionary can show us the Word/Key aginst a particular value/number. 
 
 print(f"You Chose {rDict[U]}\nComputer Chose {rDict[comp]}")   
 
